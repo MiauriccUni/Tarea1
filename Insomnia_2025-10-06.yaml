@@ -1,0 +1,298 @@
+type: collection.insomnia.rest/5.0
+name: Tarea 1
+meta:
+  id: wrk_87c98c2c30424f14a8cfb39ed39ff0a1
+  created: 1759647342310
+  modified: 1759647342310
+  description: ""
+collection:
+  - url: http://localhost:8080/auth/login
+    name: login
+    meta:
+      id: req_5e535b994a4d4afbbab71729fb8155ec
+      created: 1759729318935
+      modified: 1759744676111
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318935
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "super.admin@gmail.com", 
+        	"password": "superadmin123"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/category/postCategory/{categoryId}
+    name: Post Category
+    meta:
+      id: req_bb4440e6373a49d7b763803affae7991
+      created: 1759736017780
+      modified: 1759744692473
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318885
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Frutas", 
+        	"description": "Para categorizar las frutas"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDQ2NzYsImV4cCI6MTc1OTc0ODI3Nn0.zjHbu9v8ABazlDf28F7sJ1RCMuAbGCLy1hJyVsyYpoo
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/category/getAllCategory
+    name: Get All Category
+    meta:
+      id: req_eea42969943b424fa06a36e41a5097ae
+      created: 1759736094715
+      modified: 1759741331593
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318835
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDEzMDAsImV4cCI6MTc1OTc0NDkwMH0.nXiLLTFGqTJ8doOG69DlSWjtSaMafN-hsBVWAzcVCew
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/category/10
+    name: Put Category
+    meta:
+      id: req_fdfce65e1c4d488bb8e6abd6e3c3119d
+      created: 1759736778445
+      modified: 1759742718157
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318735
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Muebles", 
+        	"description": "Para categorizar los muebles"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDEzMDAsImV4cCI6MTc1OTc0NDkwMH0.nXiLLTFGqTJ8doOG69DlSWjtSaMafN-hsBVWAzcVCew
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/category/6
+    name: Delete Category
+    meta:
+      id: req_e09571bbe4e945169bc5df114b091274
+      created: 1759737635971
+      modified: 1759739628584
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318635
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3MzY0NzYsImV4cCI6MTc1OTc0MDA3Nn0.t8_wDTBd076PePQMdy7mGnyG2TjsxoqAO6ffqaanwWg
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/product/products/{productId}
+    name: Post Product
+    meta:
+      id: req_e91605055489495e8f65e7c190eff9bd
+      created: 1759741903468
+      modified: 1759742338459
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318860
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Tenis Naik", 
+        	"description": "Para vender tenis",
+        	"price": 10000,
+        	"amount": 20
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDIzMzAsImV4cCI6MTc1OTc0NTkzMH0.phlliuxLP7y0UF_xK8DQg_U34EKc-Mtuu6s0FqwsAeI
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/product/GetAllProducts
+    name: Get All Products
+    meta:
+      id: req_79dcf5c09b6d48dc8067d0a64943cdfe
+      created: 1759742382533
+      modified: 1759742691035
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318785
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDI2NzgsImV4cCI6MTc1OTc0NjI3OH0.TWFMRtcjEtsVMidi8t9Xtxm47s7TF1WkWqIaUg2Gp2g
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/product/1
+    name: Put Product
+    meta:
+      id: req_ea5a2501ca934a6eb343bd32bba3e9d3
+      created: 1759742723357
+      modified: 1759742812690
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318685
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Tenis pumba", 
+        	"description": "Para vender tenis",
+        	"price": 100000,
+        	"amount": 21
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDI3OTcsImV4cCI6MTc1OTc0NjM5N30.wOWovlwjBC5swQrhKNmaFo27UrQDgErPQB_ba2xF5Mk
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/product/1
+    name: Delete Product
+    meta:
+      id: req_cf2f4ad9518f4c95892f82affcba3106
+      created: 1759742827706
+      modified: 1759742892549
+      isPrivate: false
+      description: ""
+      sortKey: -1759729318535
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTk3NDI3OTcsImV4cCI6MTc1OTc0NjM5N30.wOWovlwjBC5swQrhKNmaFo27UrQDgErPQB_ba2xF5Mk
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e184a28edabcdab902b70db6a76676bbf72fb1b7
+    created: 1759647342313
+    modified: 1759740996298
+  cookies:
+    - key: JSESSIONID
+      value: 47E35DF7A81B7B759FF072A515B232C7
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-10-06T08:56:36.298Z
+      lastAccessed: 2025-10-06T08:56:36.298Z
+      id: c3a31bf6-a1dc-4d54-a9e9-b9ba30406c4b
+environments:
+  name: Base Environment
+  meta:
+    id: env_e184a28edabcdab902b70db6a76676bbf72fb1b7
+    created: 1759647342312
+    modified: 1759647342312
+    isPrivate: false
